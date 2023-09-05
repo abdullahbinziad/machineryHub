@@ -18,6 +18,7 @@ import AddProducts from '../components/dashboard/AddProducts';
  export const router = createBrowserRouter([
   {  path:'/',
     element: <MainLayOut></MainLayOut>,
+
     children:[
         {
             path:'/',
