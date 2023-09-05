@@ -1,0 +1,200 @@
+[
+  {
+    "title": "Injection Molding Machine",
+    "slug": "/molding",
+    "subcategory": [
+      {
+        "seriesName": "4G High Speed machine",
+        "seriesslug": "/subslug1",
+        "ProductsInSeries": [
+          {
+            "model": "4G high speed injection molding machine",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          }
+        ]
+      },
+      {
+        "seriesName": "MPIMM 5th GENERATION",
+        "seriesslug": "/subslug2",
+        "ProductsInSeries": [
+          {
+            "model": "LS530H3",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS450H3",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS380H3",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS300H3",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS530G6",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS450G6",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS390G6",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS368G6",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Extrusion Machinery",
+    "slug": "/extrusion",
+    "subcategory": [
+      {
+        "seriesName": "4G High Speed machine",
+        "seriesslug": "/subslug1",
+        "ProductsInSeries": [
+          {
+            "model": "4G high speed injection molding machine",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          }
+        ]
+      },
+      {
+        "seriesName": "MPIMM 5th GENERATION",
+        "seriesslug": "/subslug2",
+        "ProductsInSeries": [
+          {
+            "model": "LS530H3",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS450H3",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS380H3",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS300H3",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS530G6",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS450G6",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS390G6",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          },
+          {
+            "model": "LS368G6",
+            "specification": "",
+            "shortDescription": "",
+            "introduction": "",
+            "product Parameters": "",
+            "whychoose": "",
+            "image": ""
+          }
+        ]
+      }
+    ]
+  }
+]

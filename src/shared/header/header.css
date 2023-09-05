@@ -1,0 +1,47 @@
+.npnav {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+.npnav:hover {
+  color: #fdb400;
+}
+
+.center {
+  text-align: center;
+}
+.skewed-heading-bg {
+  color: #fff;
+  display: inline-block;
+  margin: 20px;
+  padding: 0 20px 0 0;
+  transform: skew(-20deg, 0);
+}
+
+.skewed-heading-content {
+
+    transform: skew(20deg);
+    position: relative;
+    right: -50px;
+    background-color: #fdb400;
+    padding: 5px 20px 5px 10px;
+    height: 100px;
+}
+
+.skewed-heading-bg2{
+  display: inline-block;
+  margin: -20px;
+  padding: 0 20px 0 0;
+  transform: skew(-20deg, 0);
+}
+
+.skewed-heading-content2{
+  transform: skew(20deg);
+  position: relative;
+  right: -50px;
+  background-color: #fff;
+  padding: 5px 20px 5px 10px;
+  height: 65px;
+}
+/* submenu style  */
+

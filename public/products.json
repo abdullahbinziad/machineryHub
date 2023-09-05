@@ -1,0 +1,113 @@
+[
+{
+    "_id": 1,
+    "name": " Injection molding machine",
+    "image": [
+      { "name": " Iml Sample product", "src": " https://res.cloudinary.com/flexsoftr/image/upload/v1690461235/samples/landscapes/iml_sample_product_qxawqv.jpg" },
+      { "name": " Labrotory injection molding machine", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461235/samples/landscapes/labrotory_injection_molding_machine_pcjgkv.jpg " },
+      { "name": " Lisong injection molding machine", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461236/samples/landscapes/lisong_injection_molding_machine_i5eohc.png " },
+      { "name": " Standard series", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461236/samples/landscapes/standard_series_kp8e3v.jpg " }
+    ]
+  },
+  {
+    "_id": 2,
+    "name": " Extrusion Machinery",
+    "image": [
+   
+    ]
+  },
+  {
+    "_id": 3,
+    "name": " complete bottleing line",
+    "image": [
+      { "name": "Complete bottleing line2", "src": " https://res.cloudinary.com/flexsoftr/image/upload/v1690461173/samples/landscapes/complete_bottleing_line2_hcyvjt.jpg" }
+    ]
+  },
+  {
+    "_id": 4,
+    "name": " blow molding machine ",
+    "image": [
+      { "name": " blow molding machine", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461149/samples/landscapes/blow_molding_machine_ekmtok.jpg " },
+      { "name": " jerry can bloww moulding macine", "src": " https://res.cloudinary.com/flexsoftr/image/upload/v1690461149/samples/landscapes/jerry_can_bloww_moulding_macine_hjzhyh.jpg" }
+   
+    ]
+  },
+   
+  {
+    "_id": 5,
+    "name": "Germents accessories making machinery",
+    "image": [
+      { "name": " Germents accessorie", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461178/samples/landscapes/germents_accessorie_cg6r5m.jpg " },
+      { "name": " germents accessories making machienry", "src": " https://res.cloudinary.com/flexsoftr/image/upload/v1690461178/samples/landscapes/germents_accessories_making_machienry_oagl2o.jpg" }
+    ]
+  },
+  
+  {
+    "_id": 6,
+    "name": " Hydraulic press machine",
+    "image": [
+      { "name": " hydraulic press machinery 2", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461213/samples/landscapes/hydraulic_press_machinery_2_o8uy85.jpg " }
+    ]
+  },
+  {
+    "_id": 7,
+    "name": " Printing Machinery",
+    "image": [
+      { "name": " 6 color Rotograviour printing machine", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461472/samples/landscapes/6_color_Rotograviour_printing_machine_jjuwm0.jpg " },
+      { "name": " Fiber ddesktop printing machine", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461471/samples/landscapes/fiber_ddesktop_printing_machine_ios8pu.jpg " },
+      { "name": " Online ffyber laser marking machine", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461471/samples/landscapes/Online_ffyber_laser_marking_machine_hyf71s.png " },
+      { "name": " UV laser printer machine", "src": " https://res.cloudinary.com/flexsoftr/image/upload/v1690461471/samples/landscapes/UV_laser_printer_machine_tvrqrb.png" }
+    ]
+  },
+    
+  {
+    "_id": 8,
+    "name": " Recycling Machinery",
+    "image": [
+    ]
+  },
+  {
+    "_id": 9,
+    "name": " Auxilary Machine ",
+    "image": [
+      { "name": " Air cooled Chiller", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461042/samples/landscapes/Air_cooled_Chiller_ikuqx0.jpg " },
+      { "name": " Cooling tower", "src": " https://res.cloudinary.com/flexsoftr/image/upload/v1690461042/samples/landscapes/cooling_tower_hbzbox.jpg" },
+      { "name": " Crushar machine", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461043/samples/landscapes/crushar_machine_rfhfs9.jpg " },
+      { "name": " Mixer Machine", "src": " https://res.cloudinary.com/flexsoftr/image/upload/v1690461043/samples/landscapes/mixer_machine_hqyu7k.jpg" },
+      { "name": " Pulverizer Machine", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461043/samples/landscapes/pulverizer_machine_evy69k.png " },
+      { "name": " Water cooled Screw type chiller", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461042/samples/landscapes/Water_cooled_Screw_type_chiller_xyjpbr.jpg " }
+    ]
+  },
+   
+  {
+    "_id": 10,
+    "name": " Molds",
+    "image": [
+      { "name": " Plastic iml container mold", "src": " https://res.cloudinary.com/flexsoftr/image/upload/v1690461309/samples/landscapes/plastic_iml_container_mold_jcupnf.jpg" },
+      { "name": " Plastic-spoon-mould", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461309/samples/landscapes/plastic-spoon-mould_w9sevq.jpg " },
+      { "name": " Thin-wall-cup-mold-2", "src": " https://res.cloudinary.com/flexsoftr/image/upload/v1690461310/samples/landscapes/Thin-wall-cup-mold-2_bq4dzg.jpg" }
+    ]
+  },
+
+  {
+    "_id": 11,
+    "name": " Industrial Spare Parrts",
+    "image": [
+      { "name": " Hydraulic pump", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461353/samples/landscapes/Hydraulic_pump_lgldmr.jpg " },
+      { "name": " injection molding machine controller", "src": " https://res.cloudinary.com/flexsoftr/image/upload/v1690461353/samples/landscapes/injection_molding_machine_controller_l6vzis.jpg" },
+      { "name": " mmi card", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461358/samples/landscapes/mmi_card_k6ypep.png " },
+      { "name": " servo drive inovance", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461358/samples/landscapes/servo_drive_inovance_kh36nm.png " },
+      { "name": " Servo motor", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461353/samples/landscapes/Servo_motor_sxrtrh.jpg " }
+    ]
+  },
+   
+  {
+    "_id": 12,
+    "name": " Repair zone",
+    "image": [
+      { "name": " Repair zone", "src": "https://res.cloudinary.com/flexsoftr/image/upload/v1690461348/samples/landscapes/Repair_zone_tzxde3.jpg " }
+    ]
+  }
+
+
+]
