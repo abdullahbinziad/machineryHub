@@ -7,21 +7,16 @@ const About = () => {
       <div
         style={{
           backgroundImage: `url(${cover})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover", // Corrected line
         }}
-        className=" w-full flex justify-center items-center h-[450px]"
+        className=" w-full flex justify-center items-center h-[450px] bg-cover bg-no-repeat"
       >
-        <h1 className="text-5xl text-gray-100 relative top-24">
+        <h1 className="text-2xl md:text-5xl text-gray-100 relative top-24">
           CORPORATE OVERVIEW
         </h1>
       </div>
-      <div className="w-5/6 flex flex-row-reverse justify-between gap-12 items-center  mx-auto text-gray-600 px-10 mt-10">
-        <div className="flex-1">
-          <img className="rounded-md" src={sideBarImg} alt="" />
-        </div>
-        <div className="flex-1">
-          <p className="text-xl pt-20 space-y-3 font-semibold text-justify">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-12 items-center  mx-auto text-gray-600 px-4 md:px-10 mt-10">
+        <div>
+          <p className="text-base md:text-xl md:pt-20 font-normal space-y-3 text-justify font-sans">
             NP INTERNATIONAL BD is a well-established importer, indenter, and
             supplier of industrial machinery, boasting a rich history spanning
             over 3 years. Since our inception in 2019, we have been dedicated to
@@ -39,9 +34,12 @@ const About = () => {
             professional and reliable organization.
           </p>
         </div>
+        <div className="max-w-lg mx-auto">
+          <img className="rounded-md" src={sideBarImg} alt="" />
+        </div>
       </div>
-      <div className="w-5/6 mt-4 mx-auto text-gray-600 px-10">
-        <p className="text-xl py-10  space-y-3 font-semibold text-justify">
+      <div className="md:w-5/6 mx-auto text-gray-600 px-5 mt-10">
+        <p className="text-base md:text-xl md:pt-20 font-normal space-y-3 text-justify font-sans">
           With over 13 years of expertise in the industry, we have established
           ourselves as a trustworthy partner in delivering effective and
           efficient industrial machinery and services. This commitment has
