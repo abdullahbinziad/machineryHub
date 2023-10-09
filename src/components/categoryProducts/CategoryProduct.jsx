@@ -34,15 +34,15 @@ const CategoryProduct = () => {
         }}
         className=" w-full   flex justify-center items-center h-[450px]"
       >
-        <h1 className="text-5xl text-gray-600 relative top-24">
+        <h1 className="md:text-5xl md:p-0 px-4 text-3xl text-gray-600 relative top-24">
           Products / {loaderData.categoryName}{" "}
         </h1>
       </div>
 
       <div className="-mt-40 w-5/6 mx-auto py-20">
         <div className="mx-auto">
-          <div className="flex justify-start gap-10">
-            <div className="w-3/12 space-y-10 ">
+          <div className="flex flex-col-reverse md:flex-row justify-start gap-10 ">
+            <div className="md:w-3/12 w-full space-y-10 ">
               <div
                 data-aos="fade-up"
                 className="border-b-2 bg-white shadow-md border-np"
@@ -78,7 +78,7 @@ const CategoryProduct = () => {
               {/* start the contact bar */}
               <div
                 data-aos="fade-up"
-                className="border-b-2 bg-white shadow-md border-np"
+                className="border-b-2 w-full bg-white shadow-md border-np"
               >
                 <div className="bg-gray-500 p-4 border-b-2 border-np">
                   <h1 className="text-2xl font-bold p-2">Contact</h1>

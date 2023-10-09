@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo-main.png";
+import logo from "../../assets/Np.png";
 import { Link } from "react-router-dom";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
