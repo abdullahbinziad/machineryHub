@@ -1,5 +1,5 @@
 import React from "react";
-import cover from "../../assets/title-bg.jpg";
+import cover from "../../assets/about-us.jpg";
 import sideBarImg from "../../assets/img/about.jpg";
 const About = () => {
   return (
@@ -10,13 +10,13 @@ const About = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover", // Corrected line
         }}
-        className=" w-full   flex justify-center items-center h-[450px]"
+        className=" w-full flex justify-center items-center h-[450px]"
       >
-        <h1 className="text-5xl text-gray-600 relative top-24">
+        <h1 className="text-5xl text-gray-100 relative top-24">
           CORPORATE OVERVIEW
         </h1>
       </div>
-      <div className="w-5/6 flex flex-row-reverse justify-between gap-12 items-center  mx-auto text-gray-600 px-10">
+      <div className="w-5/6 flex flex-row-reverse justify-between gap-12 items-center  mx-auto text-gray-600 px-10 mt-10">
         <div className="flex-1">
           <img className="rounded-md" src={sideBarImg} alt="" />
         </div>
@@ -36,23 +36,24 @@ const About = () => {
             dedicated to after-sales support, ensuring that our customers
             receive unparalleled service and assistance. NP INTERNATIONAL BD was
             founded in 2019 by an experienced engineer who envisioned creating a
-            professional and reliable organization. 
+            professional and reliable organization.
           </p>
         </div>
       </div>
       <div className="w-5/6 mt-4 mx-auto text-gray-600 px-10">
-        <p className="text-xl py-10  space-y-3 font-semibold text-justify">With over 13 years of
-            expertise in the industry, we have established ourselves as a
-            trustworthy partner in delivering effective and efficient industrial
-            machinery and services. This commitment has allowed us to cultivate
-            strong and lasting relationships with our esteemed customers. Our
-            unwavering dedication lies in consistently achieving the highest
-            levels of customer satisfaction. We are continuously working to
-            enhance the quality of our products and services. Therefore, we
-            wholeheartedly welcome any suggestions from our customers. Each
-            suggestion is carefully evaluated and, when deemed valuable,
-            implemented to improve our performance and better assist you in
-            realizing your future goals.</p>
+        <p className="text-xl py-10  space-y-3 font-semibold text-justify">
+          With over 13 years of expertise in the industry, we have established
+          ourselves as a trustworthy partner in delivering effective and
+          efficient industrial machinery and services. This commitment has
+          allowed us to cultivate strong and lasting relationships with our
+          esteemed customers. Our unwavering dedication lies in consistently
+          achieving the highest levels of customer satisfaction. We are
+          continuously working to enhance the quality of our products and
+          services. Therefore, we wholeheartedly welcome any suggestions from
+          our customers. Each suggestion is carefully evaluated and, when deemed
+          valuable, implemented to improve our performance and better assist you
+          in realizing your future goals.
+        </p>
       </div>
     </div>
   );
