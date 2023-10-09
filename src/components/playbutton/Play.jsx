@@ -5,7 +5,7 @@ const Play = () => {
   return (
     <div>
       <section>
-        <a href="" class="playBtn"></a>
+        <a href="" className="playBtn"></a>
       </section>
     </div>
   );
