@@ -16,14 +16,11 @@ const Footer = () => {
             </Link>
 
             <p className="text-md text-black text-justify">
-              At NP International, we take pride in being your dedicated partner
-              for all your machinery product needs. With a wealth of experience
-              and a vast global network of trusted suppliers, we specialize in
-              sourcing and importing top-quality machinery products. Our
-              commitment to excellence ensures that you have access to
-              cutting-edge solutions to power your industrial operations.
-              Discover the NP International advantage today and let us help you
-              drive efficiency and success in your business.
+              NP International takes pride in being your dedicated partner for
+              all your machinery and product needs. As a leading supplier of
+              top-quality machinery products, we have extensive experience and a
+              global network of trusted suppliers. To power your industrial
+              operations, we provide cutting-edge solutions.
             </p>
           </div>
 
