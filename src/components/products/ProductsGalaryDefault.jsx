@@ -33,7 +33,7 @@ const ProductsGalaryDefault = ({mydata,categoryName }) => {
         <h1 className='text-gray-700 text-xl'> || {mydata.length} Products Available </h1>
       </div>
 
-      <div className='grid grid-cols-3 gap-6'>
+      <div className='grid md:grid-cols-3 grid-cols-1 gap-6'>
         {visibleProducts.map((product, index) => (
           <ProductsCard key={product._id} product={product} />
         ))}

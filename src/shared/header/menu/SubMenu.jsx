@@ -1,5 +1,6 @@
 // SubMenu.js
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const SubMenu = ({ categoryName, categorySlug, subCategories }) => {
@@ -19,9 +20,9 @@ const SubMenu = ({ categoryName, categorySlug, subCategories }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <a href={categorySlug} className="block font-semibold px-4 py-2 text-gray-600 hover:text-white">
+      <Link to={`products/${categorySlug}`} className="block font-semibold px-4 py-2 text-gray-600 hover:text-white">
         {categoryName}
-      </a>
+      </Link>
       {/* <ul
         className={`w-64  absolute left-full top-0 mt-0 space-y-2 bg-white shadow-lg transition-transform duration-300 ease-in-out transform`}
       >

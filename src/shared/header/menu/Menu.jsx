@@ -25,7 +25,11 @@ const menuData = [
     },
     {
         menuName: 'About Us',
-      link: '/about',
+      link: '/about-us',
+    },
+    {
+        menuName: 'Contact Us',
+      link: '/contact-us',
     },
   ];
 
@@ -36,7 +40,7 @@ const menuData = [
 
 
   return (
-    <ul className="flex items-center justify-cente py-3 ">
+    <ul className="flex items-center justify-center  ">
       {menuData.map((menuItem,index) => (
         <MenuItem key={index} {...menuItem} />
       ))}

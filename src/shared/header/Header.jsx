@@ -29,7 +29,7 @@ const Header = () => {
 <div className="md:navbar-end bg-np w-40 md:py-8 px-6 hidden text-white skewed-heading-bg text-center ">
 
 <div className="skewed-heading-content md:flex items-center hidden ">
-<NavLink>GET A QUOTE</NavLink>
+< Link to="/contact-us">GET A QUOTE</Link>
 
  </div>
 

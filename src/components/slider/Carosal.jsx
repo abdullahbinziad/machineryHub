@@ -43,8 +43,7 @@ const sliderData = [
 sliderData.map( (n,index)=>     <SwiperSlide key={index}>
     <div
       style={{
-        backgroundImage: `url(${n.image})`,
-       
+        backgroundImage: `url(${n.image})`,      
       }}
       className="relative md:h-[800px] min-h-[400px]  bg-cover bg-no-repeat bg-center	  w-full"
     >
@@ -64,7 +63,7 @@ sliderData.map( (n,index)=>     <SwiperSlide key={index}>
   </SwiperSlide>)
     }
        
-      
+        
       </Swiper>
     </div>
   );

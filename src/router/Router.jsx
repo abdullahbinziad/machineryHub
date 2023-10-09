@@ -6,13 +6,13 @@ import Home from '../pages/home/Home';
 import About from '../pages/about/About';
 
 import Machineries from '../pages/products/Machineries';
-import Media from '../pages/media/Media';
 import SingleProducts from '../pages/products/SingleProducts';
 import CategoryProduct from '../components/categoryProducts/CategoryProduct';
 import AdminDashboardLayout from '../layout/AdminDashboardLayout';
 
 import Category from '../pages/dashboard/Category';
 import AddProducts from '../components/dashboard/AddProducts';
+import ContactUs from '../pages/contactUs/ContactUs';
 
 
  export const router = createBrowserRouter([
@@ -44,8 +44,8 @@ import AddProducts from '../components/dashboard/AddProducts';
             loader:  async ({params}) => await fetch(`https://nppinternational-server.vercel.app/products/${params.id}`)     
         },
         {
-            path:'/media',
-            element:<Media></Media>
+            path:'/contact-us',
+            element:<ContactUs></ContactUs>
         },
     ]
 
