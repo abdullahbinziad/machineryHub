@@ -12,6 +12,7 @@ import AdminDashboardLayout from "../layout/AdminDashboardLayout";
 import Category from "../pages/dashboard/Category";
 import AddProducts from "../components/dashboard/AddProducts";
 import ContactUs from "../pages/contactUs/ContactUs";
+import AddActivity from "../components/dashboard/AddActivity";
 
 export const router = createBrowserRouter([
   {
@@ -59,12 +60,16 @@ export const router = createBrowserRouter([
     element: <AdminDashboardLayout></AdminDashboardLayout>,
     children: [
       {
-        path: "/dashboard/addCategory",
+        path: "addCategory",
         element: <Category></Category>,
       },
       {
-        path: "/dashboard/addProducts",
+        path: "addProducts",
         element: <AddProducts></AddProducts>,
+      },
+      {
+        path: "add-new-activity",
+        element: <AddActivity />,
       },
     ],
   },

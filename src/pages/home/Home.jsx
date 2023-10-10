@@ -5,6 +5,7 @@ import Services from "../../components/services/Services";
 import TestimonialSlider from "../../components/testimonials/TestimonialSlider";
 import DirectorMessage from "../../components/DirectorMessage/DirectorMessage";
 import ValuableClients from "../../components/ValuableClients/ValuableClients";
+import HotProducts from "../../components/HotProducts/HotProducts";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       </div>
       <DirectorMessage />
       <Services></Services>
+      <HotProducts />
       <ValuableClients />
       <TestimonialSlider></TestimonialSlider>
     </div>

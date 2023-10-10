@@ -129,7 +129,7 @@ const Footer = () => {
           </div>
         </footer>
         <footer className="footer footer-center p-2 bg-base-300 text-base-content bg-gray-900">
-          <div className="text-center text-sm">
+          <div className="text-center text-sm text-white">
             <p>Copyright © 2023 </p>
             <p>- All right reserved by NP INTERNATIONAL BD.</p>
           </div>

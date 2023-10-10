@@ -19,16 +19,17 @@ const AddProducts = () => {
   const [subcategory, setSubcategory] = useState("");
   const [allsubcategory, setAllsubcategory] = useState([]);
 
-
-  const categorySelect = (value) => {
+  const categorySelect = value => {
     console.log(value);
     setCategory(value);
 
-    const subcategories = allcategory.filter((n) => n.categoryName === value)[0]["subCategories"];
+    const subcategories = allcategory.filter(n => n.categoryName === value)[0][
+      "subCategories"
+    ];
     setAllsubcategory(subcategories);
     console.log(subcategories);
   };
-  const subcategorySelect = (value) => {
+  const subcategorySelect = value => {
     console.log(value);
     setSubcategory(value);
   };
@@ -41,12 +42,11 @@ const AddProducts = () => {
     formState: { errors },
   } = useForm();
 
-  const mySubmit = async (data) => {
-
-
+  const mySubmit = async data => {
     const formData = new FormData();
     formData.append("image", data.image[0]);
 
+    console.log(data.image);
     const response = await axios.post(
       "https://api.imgbb.com/1/upload",
       formData,
@@ -79,12 +79,10 @@ const AddProducts = () => {
           toast.success("Products Added Successfully");
 
           reset();
-          setSubcategory("")
-          setCategory("")
-          setSpecification("")
-          setFullDescription("")
-
-
+          setSubcategory("");
+          setCategory("");
+          setSpecification("");
+          setFullDescription("");
         }
       })
       .catch(function (error) {
@@ -123,10 +121,10 @@ const AddProducts = () => {
           <div className="form-control  w-full ">
             <Select
               label="Select Category"
-              onChange={(value) => categorySelect(value)}
+              onChange={value => categorySelect(value)}
               value={category}
             >
-              {allcategory?.map((option) => (
+              {allcategory?.map(option => (
                 <Option key={option._id} value={option.categoryName}>
                   {option.categoryName}
                 </Option>
@@ -137,20 +135,19 @@ const AddProducts = () => {
           <div className="form-control w-full ">
             <Select
               label="Select Sub Category"
-              onChange={(value) => subcategorySelect(value)}
+              onChange={value => subcategorySelect(value)}
               value={subcategory}
             >
-              { allsubcategory ?  allsubcategory?.map((option) => (
-                <Option
-                  key={option.subcategorySlug}
-                  value={option.subcategoryName}
-                >
-                  {option.subcategoryName}
-                </Option>
-              ))
-            :""
-            
-            }
+              {allsubcategory
+                ? allsubcategory?.map(option => (
+                    <Option
+                      key={option.subcategorySlug}
+                      value={option.subcategoryName}
+                    >
+                      {option.subcategoryName}
+                    </Option>
+                  ))
+                : ""}
             </Select>
           </div>
 
@@ -160,8 +157,8 @@ const AddProducts = () => {
               ref={editor}
               value={specification}
               tabIndex={1} // tabIndex of textarea
-              onBlur={(newContent) => setSpecification(newContent)} // preferred to use only this option to update the content for performance reasons
-              onChange={(newContent) => {}}
+              onBlur={newContent => setSpecification(newContent)} // preferred to use only this option to update the content for performance reasons
+              onChange={newContent => {}}
             />
           </div>
           <div className=" space-y-2   col-span-2">
@@ -170,8 +167,8 @@ const AddProducts = () => {
               ref={editor}
               value={fullDescription}
               tabIndex={1} // tabIndex of textarea
-              onBlur={(newContent) => setFullDescription(newContent)} // preferred to use only this option to update the content for performance reasons
-              onChange={(newContent) => {}}
+              onBlur={newContent => setFullDescription(newContent)} // preferred to use only this option to update the content for performance reasons
+              onChange={newContent => {}}
             />
           </div>
 
