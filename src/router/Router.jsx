@@ -13,6 +13,11 @@ import Category from "../pages/dashboard/Category";
 import AddProducts from "../components/dashboard/AddProducts";
 import ContactUs from "../pages/contactUs/ContactUs";
 import AddActivity from "../components/dashboard/AddActivity";
+import Activity from "../components/dashboard/Activity";
+import ActivityDetails from "../pages/ActivityDetails/ActivityDetails";
+import Login from "../pages/Login/Login";
+import AuthProvider from "../Providers/AuthProvider/AuthProvider";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -53,11 +58,23 @@ export const router = createBrowserRouter([
         path: "/contact-us",
         element: <ContactUs></ContactUs>,
       },
+      {
+        path: "activity/:id",
+        loader: ({ params }) =>
+          fetch(`http://127.0.0.1:3000/activity/${params.id}`),
+        element: <ActivityDetails />,
+      },
     ],
   },
   {
     path: "/dashboard",
-    element: <AdminDashboardLayout></AdminDashboardLayout>,
+    element: (
+      <AuthProvider>
+        <PrivateRoute>
+          <AdminDashboardLayout />
+        </PrivateRoute>
+      </AuthProvider>
+    ),
     children: [
       {
         path: "addCategory",
@@ -71,6 +88,18 @@ export const router = createBrowserRouter([
         path: "add-new-activity",
         element: <AddActivity />,
       },
+      {
+        path: "activity",
+        element: <Activity />,
+      },
     ],
+  },
+  {
+    path: "/login",
+    element: (
+      <AuthProvider>
+        <Login />
+      </AuthProvider>
+    ),
   },
 ]);

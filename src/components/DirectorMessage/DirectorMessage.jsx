@@ -8,10 +8,7 @@ const DirectorMessage = () => {
           <h2 className="ml-5 underline font-bold text-lg md:text-2xl">
             Message From Managing Director.
           </h2>
-          <div
-            data-aos="zoom-in"
-            className="md:max-w-md w-4/6 md:w-full relative mx-auto mt-10 md:mt-20"
-          >
+          <div className="md:max-w-md w-4/6 md:w-full relative mx-auto mt-10 md:mt-20">
             <span className="absolute -top-5 -left-10">
               <img src={quotStart} alt="Quot start" className="w-5" />
             </span>

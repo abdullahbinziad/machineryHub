@@ -2,37 +2,56 @@ import axios from "axios";
 import JoditEditor from "jodit-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import useAxios from "../../hooks/useAxios";
+import { toast } from "react-toastify";
+import useReqWithCredentials from "../../hooks/useReqWithCredentials";
 
 const AddActivity = () => {
-  const [axiosSecure] = useAxios();
   const [post, setPost] = useState("");
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
+  const [activityUploading, setActivityUploading] = useState(false);
+
   const formStyle =
     "block w-full mt-1 p-3 border-black dark:bg-my-dark-btn text-gray-500 rounded-lg shadow-sm bg-gray-50 focus:border-indigo-300 focus:ring-2 focus:ring-np focus:ring-opacity-50 outline-none";
   const handleAddEvent = async data => {
+    setActivityUploading(true);
     const formData = new FormData();
     formData.append("image", data.image[0]);
-    console.log(formData);
-    const response = await axios.post(
-      "https://api.imgbb.com/1/upload",
-      formData,
-      {
-        headers: {
-          "content-type": "multipart/form-data",
-        },
-        params: {
-          key: `${import.meta.env.VITE_IMGBB}`, // Replace with your ImgBB API key
-        },
-      }
-    );
-    const imageUrl = response.data.data.url;
-    data.activityCover = imageUrl;
+    try {
+      const response = await axios.post(
+        "https://api.imgbb.com/1/upload",
+        formData,
+        {
+          headers: {
+            "content-type": "multipart/form-data",
+          },
+          params: {
+            key: `${import.meta.env.VITE_IMGBB}`, // Replace with your ImgBB API key
+          },
+        }
+      );
+      const imageUrl = response.data.data.url;
+      data.activityCover = imageUrl;
+    } catch (error) {
+      console.log(error);
+    }
+
     data.post = post;
-    console.log(data);
-    // return;
-    const res = await axios.post("http://127.0.0.1:3000/add-activity", data);
-    console.log(res);
+    useReqWithCredentials("post", "/add-activity", data)
+      .then(data => {
+        if (data.acknowledged) {
+          toast.success("Added new activity successfully.");
+          reset();
+          setPost("");
+          setActivityUploading(false);
+        } else {
+          toast.error(data.message);
+          setActivityUploading(false);
+        }
+      })
+      .catch(err => {
+        toast.error(err.message);
+        setActivityUploading(false);
+      });
   };
   return (
     <>
@@ -88,7 +107,10 @@ const AddActivity = () => {
             <label className="block text-gray-600 font-sans font-bold mb-2">
               Details post
             </label>
-            <JoditEditor onBlur={newContent => setPost(newContent)} />
+            <JoditEditor
+              value={post}
+              onBlur={newContent => setPost(newContent)}
+            />
           </div>
           <button
             className="
@@ -103,9 +125,10 @@ const AddActivity = () => {
             bg-np
             hover:bg-indigo-800
             "
+            disabled={activityUploading}
             type="submit"
           >
-            Add
+            {activityUploading ? "Uploading..." : "Add"}
           </button>
         </form>
       </div>

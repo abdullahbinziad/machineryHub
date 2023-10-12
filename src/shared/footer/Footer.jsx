@@ -3,8 +3,8 @@ import logo from "../../assets/Np.png";
 import { Link } from "react-router-dom";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
-import weChatQr from "../../assets/qr-code/we-chat.png";
-import whatsApp from "../../assets/qr-code/whats-app.png";
+import weChatQr from "../../assets/qr-code/Wechat.jpeg";
+import whatsApp from "../../assets/qr-code/Whatsapp.jpeg";
 const Footer = () => {
   return (
     <div className="bg-gray-50">

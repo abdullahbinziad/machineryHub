@@ -23,10 +23,11 @@ import { BsActivity } from "react-icons/bs";
 import { MdLocalActivity } from "react-icons/md";
 import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+import useAuthContext from "../../hooks/useAuthContext";
 
 export function AdminDashboardSidebar() {
   const [open, setOpen] = React.useState(0);
-
+  const { logOutUser } = useAuthContext();
   const handleOpen = value => {
     setOpen(open === value ? 0 : value);
   };
@@ -153,7 +154,7 @@ export function AdminDashboardSidebar() {
           </AccordionBody>
         </Accordion>
 
-        <ListItem>
+        <ListItem onClick={logOutUser}>
           <ListItemPrefix>
             <PowerIcon className="h-5 w-5" />
           </ListItemPrefix>

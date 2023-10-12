@@ -14,7 +14,6 @@ const HotProducts = () => {
       }
     },
   });
-  console.log(hotProducts);
   return (
     <>
       <div className="text-black md:w-4/5 mx-auto px-2 md:px-0">

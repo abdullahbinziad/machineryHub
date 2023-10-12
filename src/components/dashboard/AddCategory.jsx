@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
@@ -7,8 +6,7 @@ import { toast } from "react-toastify";
 import useCategory from "../../hooks/useCategory";
 
 const AddCategory = () => {
-
-    const [refetch] = useCategory();
+  const [refetch] = useCategory();
 
   const {
     register,
@@ -17,13 +15,11 @@ const AddCategory = () => {
     handleSubmit,
   } = useForm();
 
-  const handleSubmitStudentInfo = (data) => {
+  const handleSubmitStudentInfo = data => {
     // Handle form submission (e.g., send data to server)
     console.log("Form submitted:", data);
-let makeSlug = data.categoryName.toLowerCase().split(" ").join("_");
-data.categorySlug = makeSlug ;
-
-
+    let makeSlug = data.categoryName.toLowerCase().split(" ").join("_");
+    data.categorySlug = makeSlug;
 
     axios
       .post("https://nppinternational-server.vercel.app/addCategory", data)
@@ -54,9 +50,8 @@ data.categorySlug = makeSlug ;
           <div className="grid grid-cols-1 gap-x-4 ">
             <div className="form-control w-full ">
               <Input
-                variant="outline"
+                variant="outlined"
                 label="Category Name"
-              
                 {...register("categoryName")}
                 name="categoryName"
                 required
@@ -64,7 +59,6 @@ data.categorySlug = makeSlug ;
                 className="input w-full  bg-doctor-login-input"
               />
             </div>
-
 
             <div className="form-control flex justify-end w-36  ">
               <button
