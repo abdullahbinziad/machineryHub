@@ -3,26 +3,29 @@ import logo from "../../assets/Np.png";
 import { Link } from "react-router-dom";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
-import weChatQr from "../../assets/qr-code/we-chat.png";
-import whatsApp from "../../assets/qr-code/whats-app.png";
+import weChatQr from "../../assets/qr-code/Wechat.jpeg";
+import whatsApp from "../../assets/qr-code/Whatsapp.jpeg";
 const Footer = () => {
   return (
     <div className="bg-gray-50">
       <div>
         <footer className="md:p-10 p-8 grid md:grid-cols-4 grid-cols-1 gap-10 text-black">
-          <div className="flex flex-col space-y-3 col-span-1">
+          <div className="flex flex-col space-y-3 col-span-1 md:border-r-2 border-gray-500 md:pr-5">
             <Link to="/">
               <img className="w-24" src={logo} alt="" />
             </Link>
 
-            <p className="text-sm text-black ">
-              NP International: Your Machinery Import Experts, Bringing Quality
-              Machinery to Your Business Worldwide.
+            <p className="text-md text-black text-justify">
+              NP International takes pride in being your dedicated partner for
+              all your machinery and product needs. As a leading supplier of
+              top-quality machinery products, we have extensive experience and a
+              global network of trusted suppliers. To power your industrial
+              operations, we provide cutting-edge solutions.
             </p>
           </div>
 
           <div className="col-span-1 md:col-span-3">
-            <div className="grid md:grid-cols-3 md:border-b-2 border-black/40 py-5 gap-5">
+            <div className="grid md:grid-cols-3 md:border-b-2 border-gray-500 py-5 gap-5">
               <div>
                 <div className="flex gap-3 items-center">
                   <span className="text-np">
@@ -54,46 +57,55 @@ const Footer = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mt-5 gap-5">
-              <div className="flex flex-col text-sm">
-                <span className="footer-title mb-3 text-np text-3xl">
+              <div className="flex flex-col text-md">
+                <span className="footer-title mb-3 text-np text-lg md:text-2xl">
                   Quick links
                 </span>
-                <Link to="/" className="link link-hover">
+                <Link
+                  to="/"
+                  className="link link-hover hover:text-np/90 transition-all"
+                >
                   Home
                 </Link>
-                <Link to="/about-us" className="link link-hover">
+                <Link
+                  to="/about-us"
+                  className="link link-hover hover:text-np/90 transition-all"
+                >
                   About us
                 </Link>
-                <Link to="/contact-us" className="link link-hover">
+                <Link
+                  to="/contact-us"
+                  className="link link-hover hover:text-np/90 transition-all"
+                >
                   Contact us
                 </Link>
                 <Link
                   to="/products/injection_molding_machine"
-                  className="link link-hover"
+                  className="link link-hover hover:text-np/90 transition-all"
                 >
                   Injection Molding Machine
                 </Link>
                 <Link
                   to="/products/plastics_extrusion_machine"
-                  className="link link-hover"
+                  className="link link-hover hover:text-np/90 transition-all"
                 >
                   Plastics Extrusion Machine
                 </Link>
                 <Link
                   to="/products/profile_sheet_extrusion_line"
-                  className="link link-hover"
+                  className="link link-hover hover:text-np/90 transition-all"
                 >
                   Profile Sheet Extrusion Line
                 </Link>
               </div>
               <div className="flex flex-col space-y-2">
-                <span className="footer-title mb-3 text-np text-3xl">
+                <span className="footer-title mb-3 text-np text-lg md:text-2xl">
                   QR Codes
                 </span>
                 <div className="flex gap-5">
                   <div>
                     <img src={weChatQr} className="w-28 h-28" alt="We chat" />
-                    <p className="text-center">We chat</p>
+                    <p className="text-center">WeChat</p>
                   </div>
                   <div>
                     <img src={whatsApp} className="w-28 h-28" alt="Whats app" />
@@ -102,7 +114,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex flex-col space-y-2">
-                <span className="footer-title mb-3 text-np text-3xl">
+                <span className="footer-title mb-3 text-np text-lg md:text-2xl">
                   Follow us on facebook
                 </span>
                 <iframe
@@ -117,7 +129,7 @@ const Footer = () => {
           </div>
         </footer>
         <footer className="footer footer-center p-2 bg-base-300 text-base-content bg-gray-900">
-          <div className="text-center text-sm">
+          <div className="text-center text-sm text-white">
             <p>Copyright © 2023 </p>
             <p>- All right reserved by NP INTERNATIONAL BD.</p>
           </div>
