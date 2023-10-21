@@ -1,5 +1,6 @@
 import quotStart from "../../assets/quot-start.png";
 import quotEnd from "../../assets/quot-end.png";
+import directorImage from "../../assets/owner/Md.Masud_Rana_Pervaz.png";
 const DirectorMessage = () => {
   return (
     <>
@@ -26,9 +27,9 @@ const DirectorMessage = () => {
         </div>
         <div>
           <img
-            src="https://img.freepik.com/free-photo/handsome-young-businessman-suit_273609-6513.jpg"
+            src={directorImage}
             alt="Director"
-            className="w-60 h-60 object-cover mx-auto"
+            className="w-60 h-64 object-cover mx-auto"
           />
         </div>
       </div>

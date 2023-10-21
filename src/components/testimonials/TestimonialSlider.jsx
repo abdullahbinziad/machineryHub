@@ -11,30 +11,41 @@ import "./styles.css";
 // import required modules
 import { Navigation } from "swiper";
 
-//import all slider images
-import sliderImg1 from "../../assets/img/testimonial-img01.jpg";
-import sliderImg2 from "../../assets/img/testimonial-img02.jpg";
-import sliderImg3 from "../../assets/img/testimonial-img03.jpg";
+// Clients images
+import kmJafirFaruf from "../../assets/clients-image/KM JAFIR FARUK.jpg";
+import golamMohammad from "../../assets/clients-image/Md.Golam Mohammad .png";
+import mahbuburRahman from "../../assets/clients-image/Mahbubur Rahman.png";
+import gaziTauhidur from "../../assets/clients-image/Md.Gazi Tauhidur Rahman.png";
 
 const TestimonialSlider = () => {
   const sliderData = [
     {
-      image: sliderImg1,
-      company: "Mr Ahmed Ali",
-      role: "CEO & Founder",
-      feedback: `In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.  `,
+      image: kmJafirFaruf,
+      name: "KM JAFIR FARUK",
+      company: "Improve Accessories Ltd.",
+      role: "Managing Director",
+      feedback: `In a rapidly changing business environment, we need partners we can trust and rely on, and I'm pleased to say that NP International BD is one of those partners. We look forward to continuing our journey together and exploring new opportunities for growth and success.`,
     },
     {
-      image: sliderImg2,
-      company: "Ahmed Sabbir",
-      role: " Maneging Director",
-      feedback: `In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.  `,
+      image: golamMohammad,
+      name: "Md.Golam Mohammad",
+      company: "Classic Zone Bd Ltd.",
+      role: "Maneging Director",
+      feedback: `I'd like to extend my gratitude to all the team members at NP International BD who have made our partnership a success. Your professionalism, technical expertise, and commitment to our success have been instrumental.`,
     },
     {
-      image: sliderImg3,
-      company: "Abdullah Bin Ziad",
-      role: "CEO & Founder",
-      feedback: `In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.  `,
+      image: mahbuburRahman,
+      name: "Mahbubur Rahman",
+      company: "Continental Accessories ",
+      role: "Owner",
+      feedback: `NP International BD has been a vital part of our supply chain, and your machinery solutions have played a significant role in enhancing our productivity and efficiency. Your team's commitment to quality, attention to detail, and prompt response to our needs have been exemplary.`,
+    },
+    {
+      image: gaziTauhidur,
+      name: "Md.Gazi Tauhidur Rahman",
+      company: "FM Plastic Industries Ltd.",
+      role: "Managing Director/CEO",
+      feedback: `I wanted to take a moment to express my deep appreciation for the exceptional service and support provided by your organization. As the Managing Director/CEO of FM Plastic Industries Ltd., it is crucial for me to acknowledge when we encounter a business partner that consistently exceeds our expectations.`,
     },
   ];
 
@@ -50,19 +61,20 @@ const TestimonialSlider = () => {
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
           {sliderData.map((n, index) => (
             <SwiperSlide key={index}>
-              <div className=" md:h-[400px] min-h-[200px] 	  w-full">
+              <div className=" md:h-[400px] min-h-[200px] w-full">
                 <div className="flex flex-col w-3/4 mx-auto rounded-full justify-center items-center space-y-8">
-                  <div className="w-36">
+                  <div className="w-36 h-36">
                     <img
-                      className="w-full  rounded-full"
-                      src={n.image}
+                      className="w-full object-cover rounded-full"
+                      src={`${n.image}`}
                       alt=""
                     />
                   </div>
-                  <h1 className="text-sm md:text-xl text-gray-600 font-bold">
+                  <h2 className="font-bold text-gray-800">{n.name}</h2>
+                  <h1 className="text-sm md:text-lg xl:text-xl text-gray-600 font-bold">
                     {n.feedback}
                   </h1>
-                  <div className="flex gap-3 text-gray-600 items-center">
+                  <div className="md:flex gap-3 text-gray-600 items-center">
                     <h1 className="font-bold">{n.company} </h1>
                     <h1> {n.role} </h1>
                   </div>
