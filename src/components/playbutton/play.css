@@ -15,17 +15,22 @@ section {
     align-items: center;
 }
 
-a.playBtn {
-    width: 80px;
-    height: 80px;
-    background-color: #FDB400;
+.yellowPulse {
+    animation: yellowPulse 1s infinite linear;
+}
+
+.greenPulse {
+    animation: greenPulse 1s infinite linear;
+}
+
+.btnPulse {
     border-radius: 100%;
     border: #fff solid 2px;
     position: relative;
-    animation: shadowPulse 1s infinite linear;
 }
 
-a.playBtn::before {
+
+.playBtn::before {
     position: absolute;
     content: '';
     border-top: transparent 15px solid;
@@ -36,17 +41,17 @@ a.playBtn::before {
     transform: translate(-40%, -50%);
 }
 
-a.playBtn::after {
+.btnPulse::after {
     position: absolute;
     content: '';
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    border: #fff solid 2px;
     border-radius: 100%;
     animation: ringPulse 1s infinite linear;
 }
+
 
 @keyframes ringPulse {
     0% {
@@ -58,28 +63,52 @@ a.playBtn::after {
         opacity: 1;
     }
 
-    80%, 100% {
+    80%,
+    100% {
         opacity: 0;
         transform: scale(2);
     }
 }
 
-@keyframes shadowPulse {
+@keyframes yellowPulse {
     0% {
         box-shadow: 0 0 8px 6px transparent,
-                    0 0 0 0 transparent,
-                    0 0 0 0 transparent;
+            0 0 0 0 transparent,
+            0 0 0 0 transparent;
     }
 
     10% {
         box-shadow: 0 0 8px 6px #FDB400,
-                    0 0 12px 10px transparent,
-                    0 0 12px 5px #FDB400;
+            0 0 12px 10px transparent,
+            0 0 12px 5px #FDB400;
     }
 
-    80%, 100% {
+    80%,
+    100% {
         box-shadow: 0 0 8px 6px transparent,
-                    0 0 0 40px transparent,
-                    0 0 0 40px transparent;
+            0 0 0 40px transparent,
+            0 0 0 40px transparent;
+    }
+}
+
+
+@keyframes greenPulse {
+    0% {
+        box-shadow: 0 0 8px 6px transparent,
+            0 0 0 0 transparent,
+            0 0 0 0 transparent;
+    }
+
+    10% {
+        box-shadow: 0 0 8px 6px #00920F,
+            0 0 12px 10px transparent,
+            0 0 12px 5px #00920F;
+    }
+
+    80%,
+    100% {
+        box-shadow: 0 0 8px 6px transparent,
+            0 0 0 40px transparent,
+            0 0 0 40px transparent;
     }
 }

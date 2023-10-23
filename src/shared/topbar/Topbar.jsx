@@ -1,5 +1,11 @@
 import React from "react";
-import { CiLocationOn, CiPhone, CiMail,CiFacebook,CiTwitter } from "react-icons/ci";
+import {
+  CiLocationOn,
+  CiPhone,
+  CiMail,
+  CiFacebook,
+  CiTwitter,
+} from "react-icons/ci";
 
 const Topbar = () => {
   return (
@@ -10,14 +16,14 @@ const Topbar = () => {
         </div>
         <div className="flex">
           <div className="flex items-center">
-           
             <CiPhone /> <p>Make a call : +8801675570440 </p>
           </div>
           <div className="flex items-center gap-4 ml-6">
-           
-            <a href="https://www.facebook.com/profile.php?id=61550303682257&mibextid=LQQJ4d"><CiFacebook /> </a>
-            <CiTwitter /> 
-            <CiMail /> 
+            <a href="https://www.facebook.com/profile.php?id=61550303682257&mibextid=LQQJ4d">
+              <CiFacebook />{" "}
+            </a>
+            <CiTwitter />
+            <CiMail />
           </div>
         </div>
       </div>

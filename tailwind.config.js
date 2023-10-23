@@ -1,5 +1,5 @@
 const withMT = require("@material-tailwind/react/utils/withMT");
- 
+
 module.exports = withMT({
   content: [
     "./index.html",
@@ -10,16 +10,15 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        'oswald': ['Oswald', 'sans-serif'],
-        'roboto': ['Roboto', 'sans-serif'],
+        oswald: ["Oswald", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
       fontWeight: {
-        'normal': 700,
+        normal: 700,
       },
       colors: {
         np: "#FDB400",
       },
     },
   },
-
 });
