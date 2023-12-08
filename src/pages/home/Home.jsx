@@ -13,14 +13,14 @@ const Home = () => {
   return (
     <div className="z-0 bg-white">
       <Carosal />
-      <div data-aos="fade-down" className="z-10">
+      <div data-aos="fade-up" className="z-10">
         <UnderCarosal />
       </div>
-      <div data-aos="fade-down" className="z-10">
+      <div data-aos="fade-up" className="z-10">
         <DirectorMessage />
       </div>
       <AboutServices />
-      <Services />
+      {/* <Services /> */}
       <HotProducts />
       <ValuableClients />
       <TestimonialSlider />

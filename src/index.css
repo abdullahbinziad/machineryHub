@@ -5,3 +5,11 @@
 body {
   font-family: 'Oswald', sans-serif;
 }
+
+.service-logo-bg {
+  background: url(https://i.ibb.co/mFpnyr5/c93b12ff6faebc5dd4449197425c626a.jpg), linear-gradient(90deg, rgba(225, 225, 225, 30%), rgb(225, 225, 225, 30%));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

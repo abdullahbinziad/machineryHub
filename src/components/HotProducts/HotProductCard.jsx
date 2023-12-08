@@ -1,10 +1,12 @@
 import { useNavigate } from "react-router-dom";
 
-const HotProductCard = ({ product }) => {
+const HotProductCard = ({ product, index }) => {
   const navigate = useNavigate();
 
   return (
     <div
+      data-aos="slide-up"
+      data-aos-delay={(index + 1) * 100}
       onClick={() => navigate(`products/singleProduct/${product._id}`)}
       className="relative w-80 h-48 ring-1 ring-gray-500 rounded-md overflow-hidden mx-auto hover:scale-110 transition-all cursor-pointer"
     >
