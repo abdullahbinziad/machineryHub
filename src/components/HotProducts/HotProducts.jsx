@@ -22,8 +22,12 @@ const HotProducts = () => {
         </h2>
         <div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-center">
-            {hotProducts?.map(product => (
-              <HotProductCard key={product._id} product={product} />
+            {hotProducts?.map((product, index) => (
+              <HotProductCard
+                key={product._id}
+                product={product}
+                index={index}
+              />
             ))}
           </div>
         </div>

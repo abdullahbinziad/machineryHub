@@ -34,17 +34,6 @@ const Services = () => {
 
   return (
     <div className="flex flex-col text-black py-10 space-y-10">
-      <div data-aos="zoom-in" className="space-y-8">
-        <h1 className="text-center text-xl font-sans">Services We Provided</h1>
-        <h1 className="text-center font-bold text-2xl md:text-4xl">
-          WE PROVIDED BEST SERVICE
-        </h1>
-        <h1 className="text-center text-normal md:px-64 sm:p-2 mx-auto  font-sans ">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, aperiam, eaque ipsa quaed inventore
-          veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-        </h1>
-      </div>
       <div className=" grid md:grid-cols-4 sm:grid-cols-1  mt-10 w-5/6 mx-auto">
         {services.map((n, index) => (
           <ServiceCard key={index} content={n}></ServiceCard>

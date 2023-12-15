@@ -1,11 +1,27 @@
+import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logo-main.png";
 
 const AboutServices = () => {
+  const navigate = useNavigate();
   return (
     <>
-      <div className="md:w-4/5 mx-auto px-5 py-10 md:py-20">
-        <div className="relative">
-          <div className="flex flex-wrap justify-between gap-5">
+      <div data-aos="slide-up" className="space-y-8 mt-20">
+        <h1 className="text-center text-xl font-sans">Services We Provided</h1>
+        <h1 className="text-center font-bold text-2xl md:text-4xl">
+          WE PROVIDED BEST SERVICE
+        </h1>
+        {/* <h1 className="text-center text-normal md:px-64 sm:p-2 mx-auto  font-sans ">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, aperiam, eaque ipsa quaed inventore
+          veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        </h1> */}
+      </div>
+      <div
+        className="md:w-4/5 mx-auto px-5 py-10 md:py-20 "
+        data-aos="slide-up"
+      >
+        <div className="relative flex flex-col">
+          <div className="flex flex-wrap justify-between gap-5 order-2">
             <div className="max-w-sm space-y-5">
               <div>
                 <h2 className="text-md xl:text-2xl">
@@ -75,8 +91,13 @@ const AboutServices = () => {
               </div>
             </div>
           </div>
-          <div className="absolute w-full h-full top-0 left-0 xl:flex justify-center items-center hidden">
-            <img src={logo} alt="" className="w-52 h-52 " />
+          <div className="xl:absolute w-full h-full top-0 left-0 flex justify-center items-center">
+            <div
+              className="bg-red-50 p-10 rounded-full hover:rotate-[360deg] ease-linear transition-all duration-500 service-logo-bg cursor-pointer w-52 h-52 xl:w-72 xl:h-72"
+              onClick={() => navigate("/about-us")}
+            >
+              <img src={logo} alt="" className="w-36 h-36 xl:w-52 xl:h-52 " />
+            </div>
           </div>
         </div>
       </div>
