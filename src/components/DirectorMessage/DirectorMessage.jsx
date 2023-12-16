@@ -1,6 +1,6 @@
 import quotStart from "../../assets/quot-start.png";
 import quotEnd from "../../assets/quot-end.png";
-import directorImage from "../../assets/owner/Md.Masud_Rana_Pervaz.png";
+import directorImage from "../../assets/owner/md.masud_rana_parvaz.png";
 const DirectorMessage = () => {
   return (
     <>
@@ -33,10 +33,10 @@ const DirectorMessage = () => {
           />
         </div>
       </div> */}
-      <div className="max-w-5xl mx-auto mt-20">
-        <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ring-2 ring-gray-200 shadow-md overflow-hidden mx-2">
+      <div className="max-w-5xl align-center mx-auto mt-20  ">
+        <figure class="md:flex items-center   bg-slate-100 rounded-xl items-centers p-16 md:p-4 ring-2 ring-gray-200 shadow-md overflow-hidden mx-2">
           <img
-            class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+            class="w-48 h-48"
             src={directorImage}
             alt=""
             width="384"

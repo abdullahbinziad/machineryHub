@@ -16,12 +16,12 @@ const HotProducts = () => {
   });
   return (
     <>
-      <div className="text-black md:w-4/5 mx-auto px-2 md:px-0">
+      <div className="text-black md:w-3/4 mx-auto px-2 md:px-0">
         <h2 className="font-bold text-center text-2xl md:text-4xl uppercase mt-10 mb-20">
           <span className="text-red-500">Hot</span> products
         </h2>
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-center items-center">
             {hotProducts?.map((product, index) => (
               <HotProductCard
                 key={product._id}
